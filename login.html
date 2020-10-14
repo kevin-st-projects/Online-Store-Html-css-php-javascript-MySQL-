@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<style>
+	.navtop {
+	background-color: #2f3947;
+	height: 60px;
+	width: 100%;
+	border: 0;
+	}
+	.navtop div {
+	display: flex;
+	margin: 0 auto;
+	width: 1000px;
+	height: 100%;
+	}
+	.navtop div h1, .navtop div a {
+	display: inline-flex;
+	align-items: center;
+	}
+	.navtop div h1 {
+	flex: 1;
+	font-size: 24px;
+	padding: 0;
+	margin: 0;
+	color: #eaebed;
+	font-weight: normal;
+	}
+	.navtop div a {
+	padding: 0 20px;
+	text-decoration: none;
+	color: #c1c4c8;
+	font-weight: bold;
+	}
+	.navtop div a i {
+	padding: 2px 8px 0 0;
+	}
+	.navtop div a:hover {
+	color: #eaebed;
+	}
+	</style>
+	
+	
+		<title>Login</title>
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css">
+		<link href="style.css" rel="stylesheet" type="text/css">
+		<nav class="navtop">
+			<div>
+				<h1>Vorzeige prjekt made by kevin st.</h1>
+			
+				<a href="home.php"><i class="fas fa-sign-out-alt"></i>Zur Startseite</a>
+			</div>
+		</nav>
+	</head>
+	<body>
+		<div class="login">
+			<h1>Login to Vorzeigeprojekt</h1>
+			<form action="authenticate.php" method="post">
+				<label for="username">
+					<i class="fas fa-user"></i>
+				</label>
+				<input type="text" name="username" placeholder="Username" id="username" required>
+				<label for="password">
+					<i class="fas fa-lock"></i>
+				</label>
+
+				<input type="password" name="password" placeholder="Password" id="password" required>
+								<br>
+				No Account?<a href="sign up.html"> Sign Up</a>
+				<br>
+				<input type="submit" value="Login">
+			</form>
+			
+		</div>
+		
+	</body>
+</html>
